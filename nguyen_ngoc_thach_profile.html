@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Ngọc Thạch | Environmental Profile</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#173b2a;
+  background:#f3f8f1;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:linear-gradient(180deg,#dff3df 0%,#f5faf0 48%,#dcefdc 100%);
+}
+body:after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 15% 20%,rgba(255,255,255,.7) 0 2px,transparent 3px),
+    radial-gradient(circle at 80% 60%,rgba(47,125,72,.12) 0 2px,transparent 3px);
+  background-size:140px 140px,190px 190px;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:center;gap:28px;padding:17px;
+  background:rgba(10,55,32,.82);backdrop-filter:blur(10px);
+}
+nav a{color:white;text-decoration:none;font-weight:bold}
+nav a:hover{color:#b9ef9c}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:100px 20px 60px;position:relative;
+}
+.hero h1{font-size:clamp(42px,8vw,82px);color:#124d2d;letter-spacing:-2px}
+.hero p{font-size:20px;margin:18px auto;max-width:720px;line-height:1.7}
+.badge{
+  display:inline-block;padding:9px 18px;border-radius:999px;
+  background:#d2efcf;color:#17603a;font-weight:bold;
+}
+.btn{
+  display:inline-block;margin-top:18px;padding:13px 24px;border-radius:30px;
+  background:#1d7543;color:#fff;text-decoration:none;box-shadow:0 8px 25px #1d754344;
+}
+.btn:hover{transform:translateY(-2px);background:#145b32}
+.leaf{position:absolute;font-size:40px;animation:float 5s ease-in-out infinite}
+.l1{left:8%;top:30%}.l2{right:9%;top:23%;animation-delay:1s}.l3{left:15%;bottom:15%;animation-delay:2s}.l4{right:17%;bottom:20%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-22px) rotate(8deg)}}
+section{max-width:1050px;margin:auto;padding:85px 20px}
+.title{font-size:38px;text-align:center;margin-bottom:38px;color:#155b35}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{
+  background:rgba(255,255,255,.75);border:1px solid #cbe4c9;
+  border-radius:22px;padding:26px;box-shadow:0 12px 35px rgba(22,78,42,.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 40px rgba(22,78,42,.15)}
+.icon{font-size:38px;margin-bottom:13px}
+.card h3{margin-bottom:10px;color:#17603a}
+.card p{line-height:1.65;color:#41604d}
+.about{
+  display:grid;grid-template-columns:1fr 1.6fr;gap:30px;align-items:center
+}
+.profile-box{
+  text-align:center;padding:35px;border-radius:28px;
+  background:linear-gradient(145deg,#1b7041,#2d9656);color:white;
+}
+.avatar{
+  width:130px;height:130px;margin:0 auto 18px;border-radius:50%;
+  background:#dff3cf;display:flex;align-items:center;justify-content:center;
+  font-size:48px;color:#23633c;border:6px solid rgba(255,255,255,.5)
+}
+.info p{margin:12px 0;line-height:1.7}
+.skill{margin:17px 0}
+.skill-top{display:flex;justify-content:space-between;margin-bottom:7px;font-weight:bold}
+.bar{height:10px;background:#d6e8d3;border-radius:20px;overflow:hidden}
+.fill{height:100%;width:55%;background:linear-gradient(90deg,#2b8249,#8acb58);border-radius:20px}
+footer{text-align:center;padding:35px 20px;background:#103d27;color:white}
+footer p{margin:7px}
+.water{height:65px;overflow:hidden;position:relative}
+.wave{position:absolute;left:-10%;width:120%;height:80px;background:#8bcfc0;border-radius:50% 50% 0 0/35% 35% 0 0;animation:wave 6s linear infinite}
+@keyframes wave{50%{transform:translateX(30px)}}
+@media(max-width:700px){nav{gap:12px;font-size:13px}.about{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Trang chủ</a>
+  <a href="#about">Giới thiệu</a>
+  <a href="#skills">Kỹ năng</a>
+  <a href="#goals">Mục tiêu</a>
+  <a href="#contact">Liên hệ</a>
+</nav>
+
+<header class="hero" id="home">
+  <span class="leaf l1">🍃</span><span class="leaf l2">🌿</span>
+  <span class="leaf l3">🍀</span><span class="leaf l4">🌱</span>
+  <div>
+    <span class="badge">🌍 Natural Resources & Environment</span>
+    <h1>Nguyễn Ngọc Thạch</h1>
+    <p>Sinh viên ngành <strong>Quản lý tài nguyên và môi trường</strong> tại Trường Đại học Lâm nghiệp.</p>
+    <p>Học hỏi • Công nghệ • Tài nguyên • Môi trường • Phát triển bền vững</p>
+    <a class="btn" href="#about">Khám phá profile ↓</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="title">🌳 Về tôi</h2>
+  <div class="about">
+    <div class="profile-box">
+      <div class="avatar">NT</div>
+      <h2>Nguyễn Ngọc Thạch</h2>
+      <p>18/04/2007</p>
+      <p>Yên Bài, Hà Nội</p>
+      <p>🎓 Sinh viên Đại học Lâm nghiệp</p>
+    </div>
+    <div class="card info">
+      <h3>Hành trình của tôi</h3>
+      <p>Tôi đang theo học ngành Quản lý tài nguyên và môi trường, đồng thời không ngừng trau dồi kiến thức và kỹ năng để phát triển bản thân.</p>
+      <p>Tôi thích học hỏi, khám phá công nghệ và tìm hiểu những vấn đề liên quan đến tài nguyên thiên nhiên, môi trường và phát triển bền vững.</p>
+      <p><strong>Sở thích:</strong> 🤼 Armwrestling &nbsp;|&nbsp; 💻 Vọc vạch công nghệ &nbsp;|&nbsp; 📚 Học hỏi</p>
+    </div>
+  </div>
+</section>
+
+<div class="water"><div class="wave"></div></div>
+
+<section id="skills">
+  <h2 class="title">🌱 Kỹ năng đang trau dồi</h2>
+  <div class="card-grid">
+    <div class="card"><div class="icon">🌳</div><h3>Tài nguyên & môi trường</h3><p>Xây dựng nền tảng kiến thức chuyên ngành và hiểu biết về quản lý tài nguyên thiên nhiên.</p></div>
+    <div class="card"><div class="icon">💻</div><h3>Công nghệ</h3><p>Thích tìm hiểu, thử nghiệm và khám phá các công nghệ mới.</p></div>
+    <div class="card"><div class="icon">📚</div><h3>Tự học</h3><p>Chủ động học hỏi kiến thức mới và từng bước nâng cao năng lực cá nhân.</p></div>
+    <div class="card"><div class="icon">🤼</div><h3>Thể thao</h3><p>Armwrestling giúp rèn luyện sức mạnh, sự kiên trì và tinh thần kỷ luật.</p></div>
+  </div>
+</section>
+
+<section id="goals">
+  <h2 class="title">🌏 Mục tiêu dài hạn</h2>
+  <div class="card">
+    <div class="icon">🌲</div>
+    <h2>Trở thành chuyên gia trong các lĩnh vực môi trường</h2>
+    <p style="margin-top:14px;line-height:1.8">
+      Từng bước tích lũy kiến thức chuyên môn, kỹ năng thực tế và kinh nghiệm để có thể đóng góp vào công tác quản lý, bảo vệ tài nguyên thiên nhiên và môi trường theo hướng bền vững.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">🌿 Kết nối với tôi</h2>
+  <div class="card-grid">
+    <div class="card"><h3>📧 Email</h3><p>ngocthachhihi@gmail.com</p></div>
+    <div class="card"><h3>📱 Điện thoại</h3><p>0982184207</p></div>
+    <div class="card"><h3>💬 Zalo</h3><p>Liên hệ qua Zalo</p></div>
+    <div class="card"><h3>🌐 Mạng xã hội</h3><p><a href="https://www.facebook.com/share/1DehioqRGA/?mibextid=wwXIfr" target="_blank">Facebook</a><br><a href="https://www.tiktok.com/@adidaphat4561" target="_blank">TikTok</a></p></div>
+  </div>
+</section>
+
+<footer>
+  <p>🌱 Nguyễn Ngọc Thạch</p>
+  <p>Quản lý tài nguyên và môi trường • Trường Đại học Lâm nghiệp</p>
+  <p>“Học hỏi hôm nay – Bảo vệ môi trường cho ngày mai.”</p>
+</footer>
+</body>
+</html>
